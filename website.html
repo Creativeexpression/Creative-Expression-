@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creative Expression</title>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Pg0FBL.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block; 
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	border-radius: 20px;
+}
+
+ul li a:hover{
+	background-color: green;
+	font-weight: bold;
+	color: yellow;
+	border-color: pink;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.cascade img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	max-height: 1200px;
+	margin: auto;
+}
+
+.glow{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.glow h1{
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px red, 0 0 20px #fff, 0 0 30px blue, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 10px red, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	border-radius: 14px;
+	padding: 10px 30px;
+	color: red;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: red;
+	font-weight:  bold;
+	border-color: pink;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: red;
+	font-weight: bold;
+	border-color: pink;
+}
+.loader{
+	position: absolute;
+	font-size: 50px;
+	letter-spacing: 10px;
+	font-family: arial;
+	font-weight: bold;
+	top: 83%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+		.container .loader{
+			-webkit-perspective: 700px;
+			perspective: 700px;
+		}
+		.container .loader>span{
+			font-family: "oswald", sans-serif;
+			margin: 0 5px;
+			display: inline-block;
+			animation: flip 2.6s linear infinite;
+			transform-origin: 0 70%;
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+		}
+		.loader>span:nth-child(1){
+			color: red;
+			text-shadow: 0 0 100px orange;
+			animation-delay: 0.3s;
+		}
+		.loader>span:nth-child(2){
+			color: white;
+			text-shadow: 0 0 60px white;
+			animation-delay: 0.3s;
+		}
+		.loader>span:nth-child(3){
+			color: green;
+			text-shadow: 0 0 100px green;
+			animation-delay: 0.3s;
+		}
+		@keyframes flip{
+			35%{
+				transform: rotateX(360deg);
+			}
+
+			100%{
+				transform: rotateX(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<!--PASSWORD: GITHUB2025WIN11-->
+	<header>
+		<div class="main">
+			<div class="cascade">
+				<img src="cascade.png">
+			</div>
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="contac form.html">Login</a></li>
+				<li><a href="Feed.html">Feedback</a></li>
+				<li><a href="About us.html">About us</a></li>
+				<li><a href="project.html">Our Projects</a></li>
+			</ul>
+		</div>
+		<div class="glow">
+			<h1>Creative expression</h1>
+		</div>
+		<div class="button">
+			<a href="#" class="btn">Applications</a>
+			<a href="https://www.sheodutta.blogspot.com" class="btn">Learn more</a>
+		</div>
+		<div class="container">
+			<div class="loader">
+				<span>MADE</span>
+				<span>IN</span>
+				<span>INDIA</span>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
